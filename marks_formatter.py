@@ -20,7 +20,7 @@ for row in range(2, ws.max_row + 1):
         physics = int(ws.cell(row=row, column=3).value or 0)
         chemistry = int(ws.cell(row=row, column=4).value or 0)
     except ValueError:
-        print(f"⚠️ Skipping row {row} due to invalid data.")
+        print(f"Skipping row {row} due to invalid data.")
         continue
 
     total = math + physics + chemistry
@@ -31,7 +31,7 @@ for row in range(2, ws.max_row + 1):
         grade = "A"
         fill = PatternFill(start_color="C6EFCE",
                            end_color="C6EFCE", fill_type="solid")
-    elif total >= 180:
+    elif total >= 180 and total <= 239:
         grade = "B"
         fill = PatternFill(start_color="FFEB9C",
                            end_color="FFEB9C", fill_type="solid")
@@ -47,4 +47,4 @@ for row in range(2, ws.max_row + 1):
 # Save the workbook
 wb.save("formatted_marks.xlsx")
 
-print("✅ Excel file formatted and saved as 'formatted_marks.xlsx'")
+print("Excel file formatted and saved as 'formatted_marks.xlsx'")
