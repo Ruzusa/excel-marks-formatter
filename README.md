@@ -1,10 +1,10 @@
-#Excel Marks Formatter
+# Excel Marks Formatter
 
 This Python script automates the process of calculating total marks and assigning grades to students using data from an Excel sheet. It's a simple and efficient solution for teachers, educators, or anyone working with student performance data.
 
 ---
 
-#Features
+## Features
 
 -Reads student marks from an Excel file (`marks.xlsx`)
 
@@ -18,7 +18,7 @@ This Python script automates the process of calculating total marks and assignin
 
 ---
 
-#How It Works
+## How It Works
 
 1. Reads each student's Math, Physics, and Chemistry marks
 2. Calculates total marks
@@ -30,11 +30,11 @@ This Python script automates the process of calculating total marks and assignin
 
 ---
 
-#Requirements
+## Requirements
 
 -Python 3.x
 -`openpyxl` library
 
 Install with:
-```bash
-pip install openpyxl
+
+`pip install openpyxl`
